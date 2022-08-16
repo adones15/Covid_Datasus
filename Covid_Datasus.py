@@ -56,7 +56,7 @@ file.extractall(r"C:\Users\win\Notebooks\Pessoal\Covid\covid_csvs")
 
 
 #Obtendo os valores referente as datas
-d_h = date.today().strftime("%d/%m/%Y")#verificar sabado domingo e feriado
+d_h = date.today().strftime("%d/%m/%Y")
 dia = int(d_h[0:2])
 mes = d_h[3:5]
 ano = d_h[6:10]
