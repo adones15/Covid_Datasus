@@ -140,6 +140,6 @@ dff.drop(columns=["codRegiaoSaude", "nomeRegiaoSaude", "interior/metropolitana",
 
 
 #enviando os dados do df para o mysql
-con = sq.create_engine(f"mysql+pymysql://root:Ao!15069517a@localhost/covid")
+con = sq.create_engine(f"mysql+pymysql://root:{senha_bd}a@localhost/{schema}")
 dff.to_sql("covid_data", con, if_exists="replace", index=False)
 
